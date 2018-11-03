@@ -3,5 +3,5 @@ HELLO WORLD!
 Remixr
 
 Project by:
-Nithil
+Nithil Chigullapally
 Joel
