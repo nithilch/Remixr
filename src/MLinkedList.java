@@ -57,7 +57,7 @@ public class MLinkedList<T> {
 		}
 		
 		public void addNode(T val) {
-			
+			//trial
 		}
 	}
 }
