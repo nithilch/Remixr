@@ -1,3 +1,4 @@
+import java.util.NoSuchElementException;
 
 public class MLinkedList<T> {
 
@@ -65,4 +66,22 @@ public class MLinkedList<T> {
 		}
 	}
 
+	public T removeFirst() {
+		if (isEmpty())
+			throw new NoSuchElementException();
+		Node tmp = first;
+		first = first.next;
+		first.prev = null;
+		return tmp.value;
+	}
+
+	public T removeLast() {
+		if (isEmpty())
+			throw new NoSuchElementException();
+		Node tmp = last;
+		last = last.prev;
+		last.next = null;
+		return tmp.value;
+
+	}
 }
