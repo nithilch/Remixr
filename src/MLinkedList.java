@@ -1,5 +1,6 @@
 import java.util.NoSuchElementException;
 
+
 public class MLinkedList<T> {
 
 	// NODE CLASS AND CONSTRUCTOR
@@ -84,4 +85,19 @@ public class MLinkedList<T> {
 		return tmp.value;
 
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder strBuilder = new StringBuilder();
+		
+	      Node p = first;
+	      while (p != null)
+	      {
+	         strBuilder.append(p.value + "\n"); 
+	         p = p.next;
+	      }      
+	      return strBuilder.toString(); 
+	}
+	
+	
 }
